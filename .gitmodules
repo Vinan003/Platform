@@ -1,0 +1,9 @@
+[submodule "FileShare-Platform-Api-Gateway"]
+	path = FileShare-Platform-Api-Gateway
+	url = https://github.com/MalikBandara/FileShare-Platform-Api-Gateway.git
+[submodule "FileShare-Platform-Config-Server"]
+	path = FileShare-Platform-Config-Server
+	url = https://github.com/MalikBandara/FileShare-Platform-Config-Server.git
+[submodule "FileShare-Platform-Service-Registry"]
+	path = FileShare-Platform-Service-Registry
+	url = https://github.com/MalikBandara/FileShare-Platform-Service-Registry.git
