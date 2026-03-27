@@ -4,6 +4,10 @@ module.exports = {
       name: "config-server",
       script: "java",
       args: "-jar ./FileShare-Platform-Config-Server/target/config-server-1.0.0.jar",
+      env: {
+        SPRING_PROFILES_ACTIVE: "native",
+        SPRING_CLOUD_CONFIG_SERVER_NATIVE_SEARCH_LOCATIONS: "file:./FileShare-Platform-Config-Server/src/main/resources/configurations,file:./FileShare-Platform-Config-Server/src/main/resources/configurations/platform,file:./FileShare-Platform-Config-Server/src/main/resources/configurations/services"
+      },
       log_file: "./logs/config-server.log",
       restart_delay: 5000
     },
