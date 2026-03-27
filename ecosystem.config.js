@@ -3,28 +3,22 @@ module.exports = {
         {
             name: "config-server",
             script: "java",
-            args: "-jar ./FileShare-Platform-Config-Server/target/config-server-1.0.0.jar",
+            args: "-jar ./config-server/target/config-server-1.0.0.jar",
             log_file: "./logs/config-server.log",
-            shell: true,
-            cwd: "d:/ECPRashmika/platform",
         },
         {
             name: "service-registry",
             script: "java",
-            args: "-jar ./FileShare-Platform-Service-Registry/target/service-registry-1.0.0.jar",
+            args: "-jar ./service-registry/target/service-registry-1.0.0.jar",
             log_file: "./logs/service-registry.log",
             restart_delay: 5000,
-            shell: true,
-            cwd: "d:/ECPRashmika/platform",
         },
         {
             name: "api-gateway",
             script: "java",
-            args: "-jar ./FileShare-Platform-Api-Gateway/target/api-gateway-1.0.0.jar",
+            args: "-jar ./api-gateway/target/api-gateway-1.0.0.jar",
             log_file: "./logs/api-gateway.log",
             restart_delay: 5000,
-            shell: true,
-            cwd: "d:/ECPRashmika/platform",
         }
     ]
 }
